@@ -1,9 +1,9 @@
 import java.util.*;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * @Author: LP
@@ -14,12 +14,29 @@ import static org.mockito.Mockito.when;
 
 public class BibliotecaTest {
 
+    private Biblioteca lib;
+    private Book book1;
+    private Book book2;
+    private Book book3;
+    private Book other;
+
+    @Before
+    public void InitLib(){
+
+        HashMap<Book,Boolean> books = new HashMap<>();
+        book1 = new Book("book1","author1",1992);
+        book2 = new Book("book2","author2",1993);
+        book3 = new Book("book3","author2",1994);
+        other = new Book("book4","author2",1994);
+        books.put(book1,true);
+        books.put(book2,false);
+        books.put(book3, true);
+        lib = spy(new Biblioteca(books));
+    }
+
     @Test
     public void  shouldHaveWelcomeMessage(){
 
-        HashMap<Book,Boolean> books = new HashMap<>();
-        books.put(new Book("book1","author1",1992),true);
-        Biblioteca lib = new Biblioteca(books);
         String expected = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
         String actual = lib.welcome();
         Assert.assertEquals(expected,actual);
@@ -28,31 +45,59 @@ public class BibliotecaTest {
     @Test
     public void  shouldRecordBooks(){
 
-        HashMap<Book,Boolean> books = new HashMap<>();
-        Book book1 = new Book("book1","author1",1992);
-        Book book2 = new Book("book2","author2",1993);
-        books.put(book1,true);
-        books.put(book2,false);
-        Biblioteca lib = new Biblioteca(books);
         Assert.assertTrue(lib.isBookAvailable(book1));
         Assert.assertFalse(lib.isBookAvailable(book2));
         Assert.assertFalse(lib.isBookAvailable(new Book("book1","author1",1993)));
 
     }
 
-    public void shouldHaveMainMenuWhenInivaOptionSayInivaMessage(){
+    @Test
+    public void shouldHaveMainMenuWhenInvalidOptionSayInivaMessage(){
+
+        Assert.assertTrue(lib.checkOption(1));
+        Assert.assertTrue(lib.checkOption(2));
+        Assert.assertTrue(lib.checkOption(3));
+        Assert.assertTrue(lib.checkOption(4));
+        Assert.assertFalse(lib.checkOption(5));
+        Assert.assertEquals("Please select a valid option!",lib.invalidMessage());
 
     }
 
+    @Test
     public void shouldListBooksHaveAuthorAndYear(){
 
+        List<String> availableBooks = lib.getBooksInformation();
+        Assert.assertEquals(2,availableBooks.size());
+
+        for (String bookInfo: availableBooks) {
+            Assert.assertEquals(3,bookInfo.split("\\|").length);
+        }
     }
 
+    @Test
     public void shouldCheckoutBooksHaveSuccessAndFailureMessage(){
 
+        when(lib.isBookAvailable(book1)).thenReturn(true);
+        when(lib.isBookAvailable(book2)).thenReturn(false);
+        when(lib.isBookAvailable(book3)).thenReturn(true);
+        //check
+        Assert.assertEquals("Thank you! Enjoy the book.",lib.checkout(book1));
+        Assert.assertEquals("Sorry, that book is not available.",lib.checkout(book2));
+        Assert.assertEquals("Thank you! Enjoy the book.",lib.checkout(book3));
+
     }
 
+    @Test
     public void shouldReturnBooksHaveSuccessAndFailureMesseage(){
+
+        Assert.assertTrue(lib.isLibraryBook(book1));
+        Assert.assertTrue(lib.isLibraryBook(book2));
+        Assert.assertTrue(lib.isLibraryBook(book3));
+        Assert.assertFalse(lib.isLibraryBook(other));
+
+        Assert.assertEquals("Thank you for returning the book.",lib.returnBook(book2));
+        Assert.assertTrue(lib.isBookAvailable(book2));
+        Assert.assertEquals("That is not a valid book to return.",lib.returnBook(other));
 
     }
 
