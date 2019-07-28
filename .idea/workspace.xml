@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f69bdd72-a53a-4dfb-8e0e-8a90915254be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BibliotecaTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
@@ -10,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Biblioteca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BibliotecaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BibliotecaTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BibliotecaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="287">
+              <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,14 +70,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Biblioteca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+            <state relative-caret-position="209">
+              <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Java/jdk8/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="594" column="37" selection-start-line="594" selection-start-column="34" selection-end-line="594" selection-end-column="37" />
+              <folding>
+                <element signature="e#23597#23598#0" expanded="true" />
+                <element signature="e#23651#23652#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#902#903#0" expanded="true" />
+                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="655">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="e#118#119#0" expanded="true" />
                 <element signature="e#145#146#0" expanded="true" />
@@ -111,6 +142,8 @@
                 <element signature="e#414#415#0" expanded="true" />
                 <element signature="e#451#452#0" expanded="true" />
                 <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/Biblioteca.java" />
         <option value="$PROJECT_DIR$/src/test/java/BibliotecaTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
   </component>
@@ -252,7 +286,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="biblioteca.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BibliotecaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -273,32 +314,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BibliotecaTest.shouldRecordBooks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BibliotecaTest.shouldListBooksHaveAuthorAndYear" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;BibliotecaTest.shouldListBooksHaveAuthorAndYear&quot;" />
+        <option name="scriptParameters" value="--tests &quot;BibliotecaTest.shouldRecordBooks&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -355,11 +376,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BibliotecaTest.shouldRecordBooks" />
         <item itemvalue="Gradle.BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.Tests in 'biblioteca.test'" />
         <item itemvalue="Gradle.BibliotecaTest" />
-        <item itemvalue="Gradle.BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" />
-        <item itemvalue="Gradle.BibliotecaTest.shouldListBooksHaveAuthorAndYear" />
       </list>
     </recent_temporary>
   </component>
@@ -374,29 +395,11 @@
       <option name="presentableId" value="Default" />
       <updated>1564280300227</updated>
       <workItem from="1564280306576" duration="8003000" />
-      <workItem from="1564305452473" duration="4031000" />
+      <workItem from="1564305452473" duration="8626000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BibliotecaTest_shouldListBooksHaveAuthorAndYear - 2019.07.28 at 17h 43m 57s.xml">
-      <configuration name="BibliotecaTest.shouldListBooksHaveAuthorAndYear" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BibliotecaTest_shouldListBooksHaveAuthorAndYear - 2019.07.28 at 17h 46m 07s.xml">
-      <configuration name="BibliotecaTest.shouldListBooksHaveAuthorAndYear" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BibliotecaTest_shouldListBooksHaveAuthorAndYear - 2019.07.28 at 17h 48m 02s.xml">
-      <configuration name="BibliotecaTest.shouldListBooksHaveAuthorAndYear" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BibliotecaTest_shouldCheckoutBooksHaveSuccessAndFailureMessage - 2019.07.28 at 18h 03m 22s.xml">
-      <configuration name="BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BibliotecaTest_shouldCheckoutBooksHaveSuccessAndFailureMessage - 2019.07.28 at 18h 05m 16s.xml">
-      <configuration name="BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="BibliotecaTest_shouldCheckoutBooksHaveSuccessAndFailureMessage - 2019.07.28 at 18h 06m 02s.xml">
-      <configuration name="BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="BibliotecaTest_shouldCheckoutBooksHaveSuccessAndFailureMessage - 2019.07.28 at 18h 12m 01s.xml">
       <configuration name="BibliotecaTest.shouldCheckoutBooksHaveSuccessAndFailureMessage" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -409,13 +412,30 @@
     <history-entry file="BibliotecaTest_shouldReturnBooksHaveSuccessAndFailureMesseage - 2019.07.28 at 18h 24m 42s.xml">
       <configuration name="BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'biblioteca_test' - 2019.07.28 at 19h 04m 01s.xml">
+      <configuration name="Tests in 'biblioteca.test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BibliotecaTest_shouldReturnBooksHaveSuccessAndFailureMesseage - 2019.07.28 at 19h 18m 56s.xml">
+      <configuration name="BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BibliotecaTest_shouldReturnBooksHaveSuccessAndFailureMesseage - 2019.07.28 at 19h 19m 09s.xml">
+      <configuration name="BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BibliotecaTest_shouldReturnBooksHaveSuccessAndFailureMesseage - 2019.07.28 at 19h 28m 10s.xml">
+      <configuration name="BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BibliotecaTest_shouldReturnBooksHaveSuccessAndFailureMesseage - 2019.07.28 at 19h 28m 42s.xml">
+      <configuration name="BibliotecaTest.shouldReturnBooksHaveSuccessAndFailureMesseage" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="BibliotecaTest_shouldRecordBooks - 2019.07.28 at 19h 34m 41s.xml">
+      <configuration name="BibliotecaTest.shouldRecordBooks" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12034000" />
+    <option name="totallyTimeSpent" value="16629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -427,7 +447,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26407507" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -484,6 +504,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Book.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Book.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/biblioteca$Tests_in__biblioteca_.ic" NAME="Tests in 'biblioteca' Coverage Results" MODIFIED="1564285261987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -581,10 +619,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://D:/Java/jdk8/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="594" column="37" selection-start-line="594" selection-start-column="34" selection-end-line="594" selection-end-column="37" />
+          <folding>
+            <element signature="e#23597#23598#0" expanded="true" />
+            <element signature="e#23651#23652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="655">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="e#118#119#0" expanded="true" />
             <element signature="e#145#146#0" expanded="true" />
@@ -598,30 +647,46 @@
             <element signature="e#414#415#0" expanded="true" />
             <element signature="e#451#452#0" expanded="true" />
             <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Biblioteca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+        <state relative-caret-position="209">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#190#191#0" expanded="true" />
             <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BibliotecaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="287">
+          <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
           </folding>
         </state>
       </provider>

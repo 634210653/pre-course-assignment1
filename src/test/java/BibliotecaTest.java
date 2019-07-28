@@ -38,14 +38,14 @@ public class BibliotecaTest {
     public void  shouldHaveWelcomeMessage(){
 
         String expected = "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
-        String actual = lib.welcome();
+        String actual = new App().welcome();
         Assert.assertEquals(expected,actual);
     }
 
     @Test
     public void  shouldRecordBooks(){
 
-        Assert.assertTrue(lib.isBookAvailable(book1));
+        Assert.assertTrue(lib.isBookAvailable(new Book("book1","author1",1992)));
         Assert.assertFalse(lib.isBookAvailable(book2));
         Assert.assertFalse(lib.isBookAvailable(new Book("book1","author1",1993)));
 
@@ -54,12 +54,13 @@ public class BibliotecaTest {
     @Test
     public void shouldHaveMainMenuWhenInvalidOptionSayInivaMessage(){
 
-        Assert.assertTrue(lib.checkOption(1));
-        Assert.assertTrue(lib.checkOption(2));
-        Assert.assertTrue(lib.checkOption(3));
-        Assert.assertTrue(lib.checkOption(4));
-        Assert.assertFalse(lib.checkOption(5));
-        Assert.assertEquals("Please select a valid option!",lib.invalidMessage());
+        App app = new App();
+        Assert.assertTrue(app.checkOption(1));
+        Assert.assertTrue(app.checkOption(2));
+        Assert.assertTrue(app.checkOption(3));
+        Assert.assertTrue(app.checkOption(4));
+        Assert.assertFalse(app.checkOption(5));
+        Assert.assertEquals("Please select a valid option!",app.invalidMessage());
 
     }
 
@@ -99,6 +100,7 @@ public class BibliotecaTest {
         Assert.assertTrue(lib.isBookAvailable(book2));
         Assert.assertEquals("That is not a valid book to return.",lib.returnBook(other));
 
+        Assert.assertEquals(book1,new Book("book1","author1",1993));
     }
 
 }

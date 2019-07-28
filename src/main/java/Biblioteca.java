@@ -16,10 +16,7 @@ public class Biblioteca {
         this.books = books;
     }
 
-    public String welcome(){
 
-        return "Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!";
-    }
 
     public Boolean isBookAvailable(Book book){
         if(book == null||!books.containsKey(book))
@@ -27,14 +24,6 @@ public class Biblioteca {
         return books.get(book);
     }
 
-    public String invalidMessage(){
-
-        return  "Please select a valid option!";
-    }
-
-    public boolean checkOption(int option){
-            return option>=1 && option<=4;
-    }
 
 
     public List<String> getBooksInformation(){
@@ -49,10 +38,12 @@ public class Biblioteca {
     }
 
     public String checkout(Book book){
-        if(this.isBookAvailable(book))
+        if(this.isBookAvailable(book)) {
+            books.put(book,false);
             return "Thank you! Enjoy the book.";
-        else
+        } else {
             return "Sorry, that book is not available.";
+        }
     }
 
     public boolean isLibraryBook(Book book){
@@ -70,4 +61,5 @@ public class Biblioteca {
             return "That is not a valid book to return." ;
         }
     }
+
 }

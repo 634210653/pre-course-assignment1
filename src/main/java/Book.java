@@ -47,4 +47,9 @@ public class Book {
         Book tmp = (Book)obj;
         return this.name.equals(tmp.name) && this.author.equals(tmp.author) && this.year == tmp.year ;
     }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode()+author.hashCode()+year;
+    }
 }
